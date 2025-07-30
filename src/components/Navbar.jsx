@@ -21,9 +21,11 @@ export default function Navbar() {
 
                 {/* Center: Rounded Nav Links (desktop only) */}
                 <nav className="hidden md:flex space-x-6 bg-transparent border border-gray-900 px-6 py-2.5 rounded-full text-sm text-white font-medium">
-                    <a href="#" className="hover:text-blue-400 transition">Pricing</a>
-                    <a href="#" className="hover:text-blue-400 transition">Blog</a>
-                    <a href="#" className="hover:text-blue-400 transition">Docs</a>
+                    <a href="#features" className="hover:text-blue-400 transition">FeatureSection</a>
+                    <a href="#pricing" className="hover:text-blue-400 transition">Pricing</a>
+                    <a href="#faq" className="hover:text-blue-400 transition">FAQ</a>
+                    <a href="#how-it-works" className="hover:text-blue-400 transition">How it Works</a>
+                    <a href="#screenshots" className="hover:text-blue-400 transition">UI Eaxmples</a>
                 </nav>
 
                 {/* Right: Buttons */}
@@ -69,10 +71,12 @@ export default function Navbar() {
 
             {/* Mobile Dropdown Menu */}
             {open && (
-                <nav className="md:hidden bg-transparent border-t border-blue-400 px-6 py-4 space-y-3 text-white font-medium text-center">
-                    <a href="#" className="block hover:text-blue-400 transition">Pricing</a>
-                    <a href="#" className="block hover:text-blue-400 transition">Blog</a>
-                    <a href="#" className="block hover:text-blue-400 transition">Docs</a>
+                <nav className="md:hidden w-full bg-transparent border-t border-blue-400 px-6 py-4 flex flex-col items-center space-y-3 text-white font-medium overflow-hidden">
+                    <a href="#features" className="hover:text-blue-400 transition">FeatureSection</a>
+                    <a href="#pricing" className="hover:text-blue-400 transition">Pricing</a>
+                    <a href="#faq" className="hover:text-blue-400 transition">FAQ</a>
+                    <a href="#how-it-works" className="hover:text-blue-400 transition">How it Works</a>
+                    <a href="#screenshots" className="hover:text-blue-400 transition">UI Eaxmples</a>
                 </nav>
             )}
         </header>
